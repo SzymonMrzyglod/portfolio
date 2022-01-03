@@ -1,0 +1,12 @@
+.leftPanel {
+    width: 10%;
+    justify-content: flex-start;
+    background-color: #fff;
+}
+
+.rightPanel {
+    width: 10%;
+    justify-content: flex-end;
+    background-color: #fff;
+    color: black;
+}
