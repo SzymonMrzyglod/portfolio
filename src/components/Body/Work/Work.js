@@ -1,6 +1,6 @@
+import LeftSidePanel from "../SidePanels/LeftSidePanel";
+import RightSidePanel from "../SidePanels/RightSidePanel";
 import styled from 'styled-components';
-import LeftSidePanel from '../SidePanels/LeftSidePanel';
-import RighSidePanel from '../SidePanels/RightSidePanel';
 
 const WrapperMain = styled.div`
 display: flex;
@@ -11,16 +11,16 @@ const MainContent = styled.div`
 width: 100%;
 `
 
-const Main = () => {
+const Work = () => {
     return ( 
         <WrapperMain>
             <LeftSidePanel/>
                 <MainContent>
-                    Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem 
+                    Work
                 </MainContent>
-            <RighSidePanel/>
+            <RightSidePanel/>
         </WrapperMain>
-    );
+     );
 }
  
-export default Main;
+export default Work;

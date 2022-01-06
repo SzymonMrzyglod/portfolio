@@ -1,10 +1,21 @@
-import style from './SidePanel.module.css';
+import styled from 'styled-components';
 
+const RightPanel = styled.div`
+width: 10%;
+justify-content: flex-end;
+align-items: center;
+display: flex;
+flex-direction: column;
+
+& p{
+    transform: rotate(90deg) translate(-50%, 0%);
+}
+`
 const RightSideMenu = () => {
     return ( 
-        <div className={`${style.rightPanel}`}>
-            szymon.mr@gmail.com
-        </div>
+        <RightPanel>
+            <p>szymon.mr@gmail.com</p>
+        </RightPanel>
      );
 }
  

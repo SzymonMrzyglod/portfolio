@@ -1,16 +1,22 @@
 import Main from './Main/Main';
-import style from './Body.module.css';
 import LeftSidePanel from './SidePanels/LeftSidePanel';
 import RighSidePanel from './SidePanels/RightSidePanel';
+import styled from 'styled-components';
 
+const WrapperBody = styled.div`
+height: 90vh;
+display: flex;
+`
 
 const Body = () => {
     return ( 
-        <div className={`${style.body}`}>
+        
+        <WrapperBody>
+            
             <LeftSidePanel/>
             <Main/>
             <RighSidePanel/>
-        </div>
+        </WrapperBody>
      );
 }
  
