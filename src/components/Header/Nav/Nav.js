@@ -11,13 +11,14 @@ display: inline-block;
 padding: 10px 25px;
 font-size: 2rem;
 & a {
+    transition: 0.3s;
     text-decoration: none;
-    color: #D9D9D9;
+    color: #D9D9D9; 
 } 
-
+& a:hover {
+    border-bottom: 2px solid #D9D9D9;
+} 
 `
-
-
 const Menu = styled.nav`
 width: 100%;
 `
@@ -26,10 +27,11 @@ const Nav = () => {
 
             <Menu>
                 <ul>
-                    <MenuItem><Link to ="/">01.Home</Link></MenuItem>
-                    <MenuItem><Link to ="/about">02.Opcja</Link></MenuItem>
-                    <MenuItem><Link to ="/work">03.Opcja</Link></MenuItem>
-                    <MenuItem><Link to ="/contact">04.Opcja</Link></MenuItem>
+                    <MenuItem><Link to ="/">home.</Link></MenuItem>
+                    <MenuItem><Link to ="/projects">projekty.</Link></MenuItem>
+                    <MenuItem><Link to ="/work">doświadczenie.</Link></MenuItem>
+                    <MenuItem><Link to ="/hobby">hobby.</Link></MenuItem>
+                    <MenuItem><Link to ="/contact">kontakt.</Link></MenuItem>
                 </ul>
             </Menu>
 

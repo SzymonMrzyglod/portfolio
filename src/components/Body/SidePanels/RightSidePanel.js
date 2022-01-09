@@ -1,22 +1,33 @@
 import styled from 'styled-components';
+import Line from './Line';
 
 const RightPanel = styled.div`
-width: 10%;
-justify-content: flex-end;
-align-items: center;
 display: flex;
 flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+width: 10%;
+z-index: 3;
 
-& p{
-    transform: rotate(90deg) translate(-50%, 0%);
+& a{
+    transform: rotate(90deg) translate(-50%, -25%);
+    color: #D9D9D9;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+& a:hover{
+    color: #898989;
 }
 `
-const RightSideMenu = () => {
+
+const RightSidePanel = () => {
     return ( 
         <RightPanel>
-            <p>szymon.mr@gmail.com</p>
+            <a href="mailto:szymon.mr@gmail.com">szymon.mr@gmail.com</a>  
+            <Line/>
         </RightPanel>
      );
 }
  
-export default RightSideMenu;
+export default RightSidePanel;

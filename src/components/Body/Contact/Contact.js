@@ -1,25 +1,27 @@
-import LeftSidePanel from "../SidePanels/LeftSidePanel";
-import RightSidePanel from "../SidePanels/RightSidePanel";
 import styled from 'styled-components';
-
-const WrapperMain = styled.div`
-display: flex;
-height: 100%;
-`
+import Form from './Form';
 
 const MainContent = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+// align-items: center;
+height: 85vh;
 width: 100%;
+padding: 0 10%;
+
+// & .form{
+//     display: flex;
+//     flex-direction: column;  
+//     width: 100%;
+}
 `
 
 const Contact = () => {
     return ( 
-        <WrapperMain>
-            <LeftSidePanel/>
-                <MainContent>
-                    Contact
-                </MainContent>
-            <RightSidePanel/>
-        </WrapperMain>
+        <MainContent>
+           <Form/>
+        </MainContent>
      );
 }
  
